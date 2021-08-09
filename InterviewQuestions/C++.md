@@ -33,6 +33,34 @@ virtual TypeName FunctionName(args) = 0;
 int(*func)(int, int)
 ```
 
+## 面向对象思想三大特性
+### 封装
+利用抽象数据类型将数据和基于数据的操作封装在一起，尽可能地隐藏内部的细节，只保留一些对外的接口使其与外部发生联系。用户无需关心对象内部的细节，但可以通过对象对外提供的接口来访问该对象。封装把一个对象的属性私有化，同时提供一些可以被外界访问的属性的方法，如果不想被外界方法。其优点在于：减少耦合，减轻维护的负担，有效地调节性能，提高软件的可重用性，降低了构建大型系统的风险。
+### 继承
+继承实现了   **IS-A**   关系，继承应该遵循里氏替换原则，子类对象必须能够替换掉所有父类对象。父类引用指向子类对象称为   **向上转型**  。
+### 多态
+多态分为编译时多态和运行时多态：编译时多态主要指方法的重载；运行时多态指程序中定义的对象引用所指向的具体类型在运行期间才确定。运行时多态有三个条件：继承，覆盖（重写），向上转型。
+
+
+### 面向对象设计原则： S.O.L.I.D
+
+
+| 简写 | 全拼 | 中文翻译 | |
+| :---: | :---: | :---: | :---: |
+| SRP | The Single Responsibility Principle    | 单一责任原则 | 一个类只负责一件事|
+| OCP | The Open Closed Principle              | 开放封闭原则 | 类应该对扩展开放，对修改关闭 </br>（装饰者模式）| 
+| LSP | The Liskov Substitution Principle      | 里氏替换原则 | 子类必须可作为父类对象使用|
+| ISP | The Interface Segregation Principle    | 接口分离原则 | 不强迫客户依赖于它们不用的方法|
+| DIP | The Dependency Inversion Principle     | 依赖倒置原则 | 模块应该依赖于抽象 </br> 低层模块的改动不影响高层模块|
+
+| 简写    | 全拼    | 中文翻译 | |
+| :---: | :---: | :---: |:---: |
+|LOD|    The Law of Demeter / Least Knowledge | 迪米特法则   | 对象之间细节交互少|
+|CRP|    The Composite Reuse Principle        | 合成复用原则 | 组合优于继承|
+|CCP|    The Common Closure Principle         | 共同封闭原则 | 修改的在同一个包里面| 
+|SAP|    The Stable Abstractions Principle    | 稳定抽象原则 | 越抽象越稳定 |
+|SDP|    The Stable Dependencies Principle    | 稳定依赖原则 | 依赖更稳定的包|
+
 # C++ Standard Library
 
 ## To be read

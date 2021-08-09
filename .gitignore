@@ -1,6 +1,9 @@
 # VSCode configuration
 .vscode
 
+# Temporary dirs
+~*
+
 # Prerequisites
 *.d
 
