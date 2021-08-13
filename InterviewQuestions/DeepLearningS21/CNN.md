@@ -1,0 +1,3 @@
+# Convolutional Neural Network
+## Shift Invariance
+MLP assumes all recordings are exactly the same length. Conventional MLPs are sensitive to the location of the pattern, and moving of one component can lead to distinct results. The required network must be shift invariant. The solution is to scan over the input data. The entire operation can be viewed as a single giant network composed ofmany identical subnets (one per window), and the network is shift invariant. In a scanning MLP each neuron is connected to a subset of neurons in the previous layer. The weights matrix is sparse, and block structured with identical blocks. The network is a shared-parameter model.
