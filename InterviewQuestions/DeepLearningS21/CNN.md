@@ -14,10 +14,40 @@ Finding bounding box, two output, one for label and the other for bounding box l
 
 The depth-wise convolution, performs the convolution only once. Then conduct weighted sum to get the output. It's efficient to reduce the model size.
 
-**Receptive Field**: The pattern in the input image that each neuron responds to. The actual receptive field for a first layer neuron is simply its arrangement of weights, while for the higher layer neurons, the actual receptive field is not immediately obvious and must be calculated.
+**Receptive Field**: The pattern in the input image that each neuron responds to. The actual receptive field for a first layer neuron is simply its arrangement of weights, while for the higher layer neurons, the actual receptive field is not immediately obvious and must be calculated. The deeper tge layer, the larger the receptive field of each neuron.
 
 **Flattening**: The  restructuring of the maps into a
 vector before passing them to the final softmax or MLP.
+
+
+### NeoConitron
+The layer is composed of S-type and C-type neurons. The S-type responds to the signal in the previous layer, and the C-type confirm the S-types’ response. In each subsequent module, the planes of the S layers detect plane-specific patterns in the previous layer (C layer or retina). The planes of the C layers “refine” the response of the corresponding planes of the S layers. The S-type is RELU like activation, and the C-type is also RELU like but with an inhibitory bias.
+
+**Unsupervised Learning**: Randomly initialize S layers, perform Hebbian learning updates in response to input. Within any layer, at any position, only the maximum S from all the layers is selected for update. Updates are distributed across all cells within the plane. The Winner-take-all strategy makes it robust to distortion. The unsupervised learning do learn semantic visual concepts. The supervision can be added into this, resulting in convolutional neural network, CNN. The S-type corresponds to the scanning with convolution, while the C-type is the affine map with max-pooling. Each filter learns different patterns.
+
+The convolutional neural network is a supervised version of a computational model of mammalian vision. It includes: convolutional layers comprising learned filters that scan the outputs of the previous layer; and downsampling by pooling layers that vote over groups of outputs from the convolutional layer. Convolution can change the size of the output. This may be controlled via zero padding. Regular convolutional layers with stride > 1 also perform downsampling
+
+## Parameters in the CNN
+
+### Convolution Size
+Input $ N \times N$, filter $ M \times M$, and stride $S$, resulting in the output of $ \lfloor (N-M)/S \rfloor + 1 $ (assuming not allowed to go beyond the edge of the input).
+
+Situation of pading to ensure the input and output have the same size. The $P_L$ and $P_R$ are chosen such that: $|P_L -P_R| < S$ and $P_L + P_R = M-1$ for stride of $S =1$. 
+
+**Max pooling and downsampling**: Max pooling scans with a stride of 1 confer jitter-robustness, but do not constitute downsampling. Downsampling requires a stride greater than 1.Typically, max pooling is conducted without zero pad.
+
+### Parameters in each convolution layer and downsampling/pooling layer
+For each convolution layer:
+- Filter parameter $K_i \times L_i \times L_i$, and stride $S_i$.
+
+For  each downsampling/pooling layer:
+- Filter $P_i \times P_i$, and the stride $D_i$.
+
+Input layers, $H \times W \times D$.
+
+After convolution, $K_1 \times \lfloor (H-L_i)/S_i \rfloor + 1 \times \lfloor (W-L_i)/S_i \rfloor + 1  $.
+
+After downsampling, $K_2 \times \lfloor\rfloor \times \lfloor \rfloor $.
 
 
 ## Computing the divergence of shared parameters
