@@ -58,9 +58,11 @@ where $S$ represents the set of edges have a common value.
 ## Back propagation in CNN
 Convolution layer + down sampling/pooling layer
 ### For convolution layers
-Activation, same as previous. The convolution layer, the accumulation of different components. The derivation is also a convolution operation with a flipped filter. For convolution with stride, it's the same except conducting down sampling to obtain corresponding derivative.
+Activation, same as previous. The convolution layer, the accumulation of different components. The derivation is also a convolution operation with a flipped filter. For convolution with stride (down sampling the convolved layer with stride 1), it's the same except conducting up sampling the derivative map and to obtain the filter for corresponding derivative.
+
+### For filter derivative
+The derivative of the $n^{th}$ affine map convolves with every output map of the $m^{th}$ plane to get the derivative for the $m^{th}$ plane of the $n^{th}$ filter.
 
 ### For pooling layers (down sampling/up sampling map)
 E.g. derivative of max pooling, the derivation also only considers the largest from a pool of elements. The mean pooling is similar except computing the mean of a pool of elements. The derivative of mean pooling is distributed uniformly across the pool. The up sampling follow the same procedure, except we drop out the derivative for filled zero.
-
 
