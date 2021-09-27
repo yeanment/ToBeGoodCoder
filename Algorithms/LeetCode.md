@@ -8,8 +8,9 @@ This is used to mark the most fundamental problems in Leetcode.
 - [Math](SolForLeetcode-Math.md) 
 
 ## Dynamic Programming
-### Backpack Problems
+### Knapsack Problems
 - [416.](https://leetcode.com/problems/partition-equal-subset-sum) [Partition equal subset sum](partition-equal-subset-sum.md)
+- [518.](https://leetcode.com/problems/coin-change-2) [Coin charge 2](coin-charge-2.md)
 
 <!-- ## 算法思想
 

@@ -24,6 +24,8 @@ public:
         // Now is the kackpack problem
         int n = nums.size();
         vector<vector<int>> dpMatrix(n, vector<int>(toPack+1, 0));
+        if(nums[0] < toPack)
+            dpMatrix[0][nums[0]] = nums[0];
         for(int i=0; i<n; i++)
         {
             for(int j=1; j<=toPack;j++)
@@ -51,6 +53,48 @@ public:
 Note:
 - Runtime: 300 ms
 - Memory Usage: 75.3 MB
+
+**Optimized for memory usage**
+```C++
+class Solution {
+public:
+    bool canPartition(vector<int>& nums) {
+        
+        int sum = 0;
+        
+        for(vector<int>::iterator iter=nums.begin(); iter!=nums.end(); iter++)
+            sum += *iter;
+        if( sum%2 != 0)
+            return false;
+        int toPack = (int)sum/2;
+        // Now is the kackpack problem
+        int n = nums.size();
+        vector<int> dpMatrix(toPack+1, 0);
+        if(nums[0] < toPack)
+            dpMatrix[nums[0]] = nums[0];
+        for(int i=0; i<n; i++)
+        {
+            for(int j=toPack; j>=0;j--)
+            {
+                if(j >= nums[i] && i > 0)
+                    dpMatrix[j] = max(dpMatrix[j], dpMatrix[j-nums[i]] + nums[i]);
+                else if(j >= nums[i] && i == 0)
+                    dpMatrix[j] = dpMatrix[nums[i]];
+                else if (j < nums[i] && i > 0)
+                    dpMatrix[j] = dpMatrix[j];
+            }
+        }
+        if(dpMatrix[toPack] == toPack)
+            return true;
+        return false;
+    }
+};
+```
+Note:
+- Runtime: 212 ms
+- Memory Usage: 9.9 MB
+
+
 
 ### Sol 2  
 ```C++
