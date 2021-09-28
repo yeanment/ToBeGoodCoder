@@ -7,10 +7,18 @@ This is used to mark the most fundamental problems in Leetcode.
 ## Algorithm theory
 - [Math](SolForLeetcode-Math.md) 
 
+## Sorting
+### Two Pointers
+- [16.](https://leetcode.com/problems/3sum-closest/) [3Sum closest](3sum-closest.md)
+
+# Binary Tree
+### Tree Traversal
+- [102.](https://leetcode.com/problems/binary-tree-level-order-traversal) [Binary tree level order traversal](binary-tree-level-order-traversal.md)
+
 ## Dynamic Programming
 ### Knapsack Problems
 - [416.](https://leetcode.com/problems/partition-equal-subset-sum) [Partition equal subset sum](partition-equal-subset-sum.md)
-- [518.](https://leetcode.com/problems/coin-change-2) [Coin charge 2](coin-charge-2.md)
+- [518.](https://leetcode.com/problems/coin-change-2) [Coin charge 2](coin-change-2.md)
 
 <!-- ## 算法思想
 
