@@ -18,6 +18,8 @@ This is used to mark the most fundamental problems in Leetcode.
 ## Dynamic Programming
 ### Knapsack Problems
 - [416.](https://leetcode.com/problems/partition-equal-subset-sum) [Partition equal subset sum](partition-equal-subset-sum.md)
+- [698.](https://leetcode.com/problems/partition-to-k-equal-sum-subsets) [Partition to k equal sum subsets](partition-to-k-equal-sum-subsets.md)
+
 - [518.](https://leetcode.com/problems/coin-change-2) [Coin charge 2](coin-change-2.md)
 
 <!-- ## 算法思想
