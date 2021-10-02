@@ -7,6 +7,20 @@ This is used to mark the most fundamental problems in Leetcode.
 ## Algorithm theory
 - [Math](SolForLeetcode-Math.md) 
 
+## Math
+### Greatest common factor/divisor && leatest common multiplier
+gcd(x, y) = mod(y, x) == 0 ? x : gcd(x, mod(y, x)) =  2<sup>min(m0, n0)</sup> \* 3<sup>min(m1, n1)</sup> \* 5<sup>min(m2, n2)</sup> \* ...
+
+
+- [1071.](https://leetcode.com/problems/greatest-common-divisor-of-strings/) [Greatest common divisor of strings](greatest-common-divisor-of-strings.md)
+- [1979.](https://leetcode.com/problems/find-greatest-common-divisor-of-array/) [Find greatest common divisor of array](find-greatest-common-divisor-of-array.md)
+
+lcm(x,y) =  x * y / gcd(x, y) = 2<sup>max(m0, n0)</sup> \* 3<sup>max(m1, n1)</sup> \* 5<sup>max(m2, n2)</sup> \* ...
+
+
+### Prime Numbers
+- [204.](https://leetcode.com/problems/count-primes/) [Count primes](count-primes.md)
+
 ## Sorting
 ### Two Pointers
 - [16.](https://leetcode.com/problems/3sum-closest/) [3Sum closest](3sum-closest.md)
@@ -21,6 +35,9 @@ This is used to mark the most fundamental problems in Leetcode.
 - [698.](https://leetcode.com/problems/partition-to-k-equal-sum-subsets) [Partition to k equal sum subsets](partition-to-k-equal-sum-subsets.md)
 
 - [518.](https://leetcode.com/problems/coin-change-2) [Coin charge 2](coin-change-2.md)
+
+- [1262.](https://leetcode.com/problems/greatest-sum-divisible-by-three/) [Greatest sum divisible by three](greatest-sum-divisible-by-three.md)
+
 
 <!-- ## 算法思想
 
