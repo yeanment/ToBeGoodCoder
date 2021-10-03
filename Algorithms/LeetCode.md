@@ -21,6 +21,11 @@ lcm(x,y) =  x * y / gcd(x, y) = 2<sup>max(m0, n0)</sup> \* 3<sup>max(m1, n1)</su
 ### Prime Numbers
 - [204.](https://leetcode.com/problems/count-primes/) [Count primes](count-primes.md)
 
+### Base Conversion
+- [168.](https://leetcode.com/problems/excel-sheet-column-title/) [Excel sheet column title](excel-sheet-column-title.md)
+- [405.](https://leetcode.com/problems/convert-a-number-to-hexadecimal/) [Convert a number to hexadecimal](convert-a-number-to-hexadecimal.md)
+- [504.](https://leetcode.com/problems/base-7/) [Base 7](base-7.md)
+
 ## Sorting
 ### Two Pointers
 - [16.](https://leetcode.com/problems/3sum-closest/) [3Sum closest](3sum-closest.md)
