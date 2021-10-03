@@ -39,10 +39,20 @@ lcm(x,y) =  x * y / gcd(x, y) = 2<sup>max(m0, n0)</sup> \* 3<sup>max(m1, n1)</su
 - [628.](https://leetcode.com/problems/maximum-product-of-three-numbers/) [Maximum Product of Three Numbers](maximum-product-of-three-numbers.md)
 
 ## Sorting
-### Two Pointers
-- [16.](https://leetcode.com/problems/3sum-closest/) [3Sum Closest](3sum-closest.md)
+### Merge Sorting
+- [88.](https://leetcode.com/problems/merge-sorted-array/) [Merge Sorted Array](merge-sorted-array.md)
 
-# Binary Tree
+### Two Pointers
+- [167.](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/) [Two Sum II - Input array is sorted](two-sum-ii-input-array-is-sorted.md)
+- [16.](https://leetcode.com/problems/3sum-closest/) [3Sum Closest](3sum-closest.md)
+- [633.](https://leetcode.com/problems/sum-of-square-numbers/) [Sum of Square Numbers](sum-of-square-numbers.md)
+- [345.](https://leetcode.com/problems/reverse-vowels-of-a-string/) [Reverse Vowels of a String](reverse-vowels-of-a-string.md)
+- [680.](https://leetcode.com/problems/valid-palindrome-ii/) [Valid Palindrome II](valid-palindrome-ii.md)
+- [524.](https://leetcode.com/problems/longest-word-in-dictionary-through-deleting/) [Longest Word in Dictionary through Deleting](longest-word-in-dictionary-through-deleting.md)
+- [141.](https://leetcode.com/problems/linked-list-cycle/) [Linked List Cycle](linked-list-cycle.md)
+
+
+## Binary Tree
 ### Tree Traversal
 - [102.](https://leetcode.com/problems/binary-tree-level-order-traversal) [Binary Tree Level Order Traversal](binary-tree-level-order-traversal.md)
 
@@ -50,15 +60,11 @@ lcm(x,y) =  x * y / gcd(x, y) = 2<sup>max(m0, n0)</sup> \* 3<sup>max(m1, n1)</su
 ### Knapsack Problems
 - [416.](https://leetcode.com/problems/partition-equal-subset-sum) [Partition Equal Subset Sum](partition-equal-subset-sum.md)
 - [698.](https://leetcode.com/problems/partition-to-k-equal-sum-subsets) [Partition to k Equal Sum Subsets](partition-to-k-equal-sum-subsets.md)
-
 - [518.](https://leetcode.com/problems/coin-change-2) [Coin Charge 2](coin-change-2.md)
-
 - [1262.](https://leetcode.com/problems/greatest-sum-divisible-by-three/) [Greatest Sum Divisible by Three](greatest-sum-divisible-by-three.md)
 
 
 <!-- ## 算法思想
-
-- [双指针](Leetcode%20题解%20-%20双指针.md)
 - [排序](Leetcode%20题解%20-%20排序.md)
 - [贪心思想](Leetcode%20题解%20-%20贪心思想.md)
 - [二分查找](Leetcode%20题解%20-%20二分查找.md)
