@@ -63,6 +63,10 @@ lcm(x,y) =  x * y / gcd(x, y) = 2<sup>max(m0, n0)</sup> \* 3<sup>max(m1, n1)</su
 - [518.](https://leetcode.com/problems/coin-change-2) [Coin Charge 2](coin-change-2.md)
 - [1262.](https://leetcode.com/problems/greatest-sum-divisible-by-three/) [Greatest Sum Divisible by Three](greatest-sum-divisible-by-three.md)
 
+## Divide and Conquer
+- [95.](https://leetcode.com/problems/unique-binary-search-trees-ii/) [Unique Binary Search Trees II](unique-binary-search-trees-ii.md)
+- [241.](https://leetcode.com/problems/different-ways-to-add-parentheses/) [Different Ways to Add Parentheses](different-ways-to-add-parentheses.md)
+
 
 <!-- ## 算法思想
 - [排序](Leetcode%20题解%20-%20排序.md)
