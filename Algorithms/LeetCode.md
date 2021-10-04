@@ -71,7 +71,6 @@ lcm(x,y) =  x * y / gcd(x, y) = 2<sup>max(m0, n0)</sup> \* 3<sup>max(m1, n1)</su
 - [分治](Leetcode%20题解%20-%20分治.md)
 - [搜索](Leetcode%20题解%20-%20搜索.md)
 - [动态规划](Leetcode%20题解%20-%20动态规划.md)
-- [数学](Leetcode%20题解%20-%20数学.md)
 
 ## 数据结构相关
 
@@ -85,4 +84,4 @@ lcm(x,y) =  x * y / gcd(x, y) = 2<sup>max(m0, n0)</sup> \* 3<sup>max(m1, n1)</su
 - [位运算](Leetcode%20题解%20-%20位运算.md) -->
 
 ## Reference
-- Leetcode
+- [Leetcode](https://leetcode.com)
