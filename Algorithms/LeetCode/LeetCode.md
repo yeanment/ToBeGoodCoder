@@ -51,6 +51,16 @@ lcm(x,y) =  x * y / gcd(x, y) = 2<sup>max(m0, n0)</sup> \* 3<sup>max(m1, n1)</su
 - [524.](https://leetcode.com/problems/longest-word-in-dictionary-through-deleting/) [Longest Word in Dictionary through Deleting](longest-word-in-dictionary-through-deleting.md)
 - [141.](https://leetcode.com/problems/linked-list-cycle/) [Linked List Cycle](linked-list-cycle.md)
 
+## Graph
+### Bipartite Graph 
+- [785.](https://leetcode.com/problems/is-graph-bipartite/) [Is Graph Bipartite?](is-graph-bipartite.md)
+
+### Topological Sort
+- [207.](https://leetcode.com/problems/course-schedule/) [Course Schedule](course-schedule.md)
+- [210.](https://leetcode.com/problems/course-schedule-ii/)  [Course Schedule II](course-schedule-ii.md)
+
+### Disjoint Set
+- [684.](https://leetcode.com/problems/redundant-connection/) [Redundant Connection](redundant-connection.md)
 
 ## Binary Tree
 ### Tree Traversal
