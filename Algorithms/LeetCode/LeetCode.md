@@ -38,9 +38,19 @@ lcm(x,y) =  x * y / gcd(x, y) = 2<sup>max(m0, n0)</sup> \* 3<sup>max(m1, n1)</su
 - [462.](https://leetcode.com/problems/minimum-moves-to-equal-array-elements-ii/) [Minimum Moves to Equal Array Elements II](minimum-moves-to-equal-array-elements-ii.md)
 - [628.](https://leetcode.com/problems/maximum-product-of-three-numbers/) [Maximum Product of Three Numbers](maximum-product-of-three-numbers.md)
 
+## Search
+### Binary Search
+- [34.](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/) [Find First and Last Position of Element in Sorted Array](find-first-and-last-position-of-element-in-sorted-array.md)
+- [69.](https://leetcode.com/problems/sqrtx/) [Sqrt(x)](sqrtx.md)
+- [153.](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/) [Find Minimum in Rotated Sorted Array](find-minimum-in-rotated-sorted-array.md) 
+- [278.](https://leetcode.com/problems/first-bad-version/) [First Bad Version](first-bad-version.md)
+- [540.](https://leetcode.com/problems/single-element-in-a-sorted-array/) [Single Element in a Sorted Array](single-element-in-a-sorted-array,md)
+
 ## Sorting
 ### Merge Sorting
 - [88.](https://leetcode.com/problems/merge-sorted-array/) [Merge Sorted Array](merge-sorted-array.md)
+- [744.](https://leetcode.com/problems/find-smallest-letter-greater-than-target/) [Find Smallest Letter Greater Than Target](find-smallest-letter-greater-than-target.md)
+
 
 ### Two Pointers
 - [167.](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/) [Two Sum II - Input array is sorted](two-sum-ii-input-array-is-sorted.md)
@@ -50,6 +60,15 @@ lcm(x,y) =  x * y / gcd(x, y) = 2<sup>max(m0, n0)</sup> \* 3<sup>max(m1, n1)</su
 - [680.](https://leetcode.com/problems/valid-palindrome-ii/) [Valid Palindrome II](valid-palindrome-ii.md)
 - [524.](https://leetcode.com/problems/longest-word-in-dictionary-through-deleting/) [Longest Word in Dictionary through Deleting](longest-word-in-dictionary-through-deleting.md)
 - [141.](https://leetcode.com/problems/linked-list-cycle/) [Linked List Cycle](linked-list-cycle.md)
+
+## Array
+### Hash Table
+- [1.](https://leetcode.com/problems/two-sum/) [Two Sum](two-sum.md)
+- [128.](https://leetcode.com/problems/longest-consecutive-sequence/) [Longest Consecutive Sequence](longest-consecutive-sequence.md)
+- [217.](https://leetcode.com/problems/contains-duplicate/) [Contains Duplicate](contains-duplicate.md)
+- [442.](https://leetcode.com/problems/find-all-duplicates-in-an-array/) [Find All Duplicates in an Array](find-all-duplicates-in-an-array.md)
+- [535.](https://leetcode.com/problems/encode-and-decode-tinyurl/) [Encode and Decode TinyURL](encode-and-decode-tinyurl.md)
+- [594.](https://leetcode.com/problems/longest-harmonious-subsequence/) [Longest Harmonious Subsequence](longest-harmonious-subsequence.md)
 
 ## Graph
 ### Bipartite Graph 
