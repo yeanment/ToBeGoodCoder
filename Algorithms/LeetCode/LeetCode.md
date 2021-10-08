@@ -6,11 +6,6 @@ This is used to mark the most fundamental problems in Leetcode.
 
 ## Math
 ### Greatest common factor/divisor && leatest common multiplier
-gcd(x, y) = mod(y, x) == 0 ? x : gcd(x, mod(y, x)) =  2<sup>min(m0, n0)</sup> \* 3<sup>min(m1, n1)</sup> \* 5<sup>min(m2, n2)</sup> \* ...
-
-lcm(x,y) =  x * y / gcd(x, y) = 2<sup>max(m0, n0)</sup> \* 3<sup>max(m1, n1)</sup> \* 5<sup>max(m2, n2)</sup> \* ...
-
-
 - [1071.](https://leetcode.com/problems/greatest-common-divisor-of-strings/) [Greatest Common Divisor of Strings](greatest-common-divisor-of-strings.md)
 - [1979.](https://leetcode.com/problems/find-greatest-common-divisor-of-array/) [Find Greatest Common Divisor of Array](find-greatest-common-divisor-of-array.md)
 
@@ -45,6 +40,10 @@ lcm(x,y) =  x * y / gcd(x, y) = 2<sup>max(m0, n0)</sup> \* 3<sup>max(m1, n1)</su
 - [153.](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/) [Find Minimum in Rotated Sorted Array](find-minimum-in-rotated-sorted-array.md) 
 - [278.](https://leetcode.com/problems/first-bad-version/) [First Bad Version](first-bad-version.md)
 - [540.](https://leetcode.com/problems/single-element-in-a-sorted-array/) [Single Element in a Sorted Array](single-element-in-a-sorted-array,md)
+
+### Maze
+- [79.](https://leetcode.com/problems/word-search/) [Word Search](word-search.md)
+- [212.](https://leetcode.com/problems/word-search-ii/) [Word Search II](word-search-ii.md)
 
 ## Sorting
 ### Merge Sorting
@@ -81,9 +80,11 @@ lcm(x,y) =  x * y / gcd(x, y) = 2<sup>max(m0, n0)</sup> \* 3<sup>max(m1, n1)</su
 ### Disjoint Set
 - [684.](https://leetcode.com/problems/redundant-connection/) [Redundant Connection](redundant-connection.md)
 
-## Binary Tree
+## Tree
 ### Tree Traversal
 - [102.](https://leetcode.com/problems/binary-tree-level-order-traversal) [Binary Tree Level Order Traversal](binary-tree-level-order-traversal.md)
+### Tree Implement
+- [208.](https://leetcode.com/problems/implement-trie-prefix-tree/) [Implement Trie (Prefix Tree)](implement-trie-prefix-tree.md)
 
 ## Dynamic Programming
 ### Knapsack Problems

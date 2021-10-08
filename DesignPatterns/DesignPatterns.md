@@ -5,18 +5,16 @@
 By definition, Design Patterns are reusable solutions to commonly occuring problems(in the context of software design). Design patterns were started as best practices that were applied again and again to similar problems encountered in different contexts. They become popular after they were collected, in a formalized form, in the Gang Of Four book in 1994. Originally published with c++ and smaltalk code samples, design patterns are very popular in Java and C# can be applied in all object oriented languanges. In functional languages like Scala, certain patterns are not necesary anymore. 
 
 ## Creational Design Patterns
-
-- [Singleton:](singleton.md) Ensure that only one instance of a class is created and provide a global access point to the object.
-- [Factory (Simplified version of Factory Method):](factory-pattern.md): Creates objects without exposing the instantiation logic to the client and refers to the newly created object through a common interface. 
+- [Singleton:](singleton-pattern.md) Ensures that only one instance of a class is created and provide a global access point to the object.
+- [Factory (Simplified version of Factory Method):](factory-pattern.md) Creates objects without exposing the instantiation logic to the client and refers to the newly created object through a common interface. 
 - [Factory Method:](factory-method-pattern.md) Defines an interface for creating objects, but let subclasses to decide which class to instantiate and refers to the newly created object through a common interface.
-- [Abstract Factory](abstract-factory-pattern.md)
+- [Abstract Factory:](abstract-factory-pattern.md) Offers the interface for creating a family of related objects, without explicitly specifying their classes. 
+- [Builder:](builder-pattern.md) Defines an instance for creating an object but letting subclasses decide which class to instantiate and Allows a finer control over the construction process. 
+- [Prototype:](prototype-pattern.md) Specify the kinds of objects to create using a prototypical instance, and create new objects by copying this prototype.
+- [Object Pool:](object-pool-pattern.md) Reuses and shares objects that are expensive to create. 
 
+## Behavioral Design Patterns:
 <!-- 
-- [生成器.md](设计模式%20-%20生成器.md)
-- [原型模式.md](设计模式%20-%20原型模式.md)
-
-## 三、行为型
-
 - [责任链.md](设计模式%20-%20责任链.md)
 - [命令.md](设计模式%20-%20命令.md)
 - [解释器.md](设计模式%20-%20解释器.md)

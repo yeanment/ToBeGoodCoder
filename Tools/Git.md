@@ -44,6 +44,7 @@ Each level overrides values in the previous level, so values in `.git/config` tr
 | `user.name`  | "John Doe"| Name |
 | `user.email` | johndoe@example.com | Email address |
 | `core.editor`| emacs | Default text editors |
+| `alias.<alias> '<>'`| `git config --global alias.unstage 'reset HEAD --'` | Make alias, '`git <alias>` is equivalently with `git <>` |
 
 ## Git Basics
 ### Getting a Git Repository
@@ -96,6 +97,53 @@ The `git log` lists the commits made in that repository in reverse chronological
 | `--committer`| | Only show commits in which the committer entry matches the specified string|
 |`--grep`  | |Only show commits with a commit message containing the string |
 | `-S` || Only show commits adding or removing code matching the string |
+
+### Undoing Things
+One of the common undos takes place when you commit too early and possibly forget to add some files, or you mess up your commit message. If you want to redo that commit, make the additional changes you forgot, stage them, and commit again using the --amend option: `git commit --amend`. This command takes your staging area and uses it for the commit. If you’ve made no changes since your last commit (for instance, you run this command immediately after your previous commit), then your snapshot will look exactly the same, and all you’ll change is your commit message.
+
+**It’s important to understand that when you’re amending your last commit, you’re not so much fixing it as replacing it entirely with a new, improved commit that pushes the old commit out of the way and puts the new commit in its place. Effectively, it’s as if the previous commit never happened, and it won’t show up in your repository history.**
+
+
+If you’ve changed two files and want to commit them as two separate changes, but you accidentally type git add * and stage them both. You can unstage one of the two with the git command: `git reset HEAD <file>...`. It’s true that git reset can be a dangerous command, especially if you provide the `--hard` flag. However, in the scenario that the file in your working directory is not touched, it’s relatively safe.
+
+What if you realize that you don’t want to keep your changes to the CONTRIBUTING.md file? How can
+you easily unmodify it — revert it back to what it looked like when you last committed (or initially
+cloned, or however you got it into your working directory)? The git command `git checkout -- <file>..` discards changes in working directory. It’s important to understand that `git checkout -- <file> ` discards any local changes you made to that file are gone, and just replaced that file with the most recently-committed version. 
+
+### Working with Remotes
+The `git remote` lists the shortnames of each remote handle you’ve specified.
+| `git remote` | Options (e.g.) | Description |
+| :-----| :----: | :---- |
+| `-v` |  | Shows the URLs that Git has stored for the shortname to be used when reading and writing to that remote |
+| `add`| `git remote add <shortname> <url>` | Adds a new remote Git repository as a shortname you can reference easily|
+| `show <remote>`| `git remote show <remote>` | Lists the URL for the remote repository as well as the tracking branch information |
+| `rename <ori> <to>`| `git remote rename origin pb ` | Change a remote’s shortname form `<ori>` to `<to>`|
+| `remove <remote>` or  `rm <remote>`| `git remote remove origin  ` | Removes a remote|
+
+
+The `git fetch <remote>` fetch all the information from that remote repositories. It’s important to note that the `git fetch` command only downloads the data to your local repository — it doesn’t automatically merge it with any of your work or modify what you’re currently working on. You have to merge it manually into your work when you’re ready.
+
+If your current branch is set up to track a remote branch, you can use the `git pull` command to automatically fetch and then merge that remote branch into your current branch.
+
+The `git push <remote> <branch>` command pushs your master branch to your origin server. This command works only if you cloned from a server to which you have write access and if nobody has pushed in the meantime. If you and someone else clone at the same time and they push upstream and then you push upstream, your push will rightly be rejected. You’ll have to fetch their work first and incorporate it into yours before you’ll be allowed to push. 
+
+### Tagging
+Git supports two types of tags: lightweight and annotated. A **lightweight tag** is very much like a branch that doesn’t change — it’s just a pointer to a specific commit. **Annotated tags**, however, are stored as full objects in the Git database. They’re checksummed; contain the tagger name, email, and date; have a tagging message; and can be signed and verified with GNU Privacy Guard (GPG). It’s generally recommended that you create annotated tags so you can have all this information; but if you want a temporary tag or for some reason don’t want to keep the other information, lightweight tags are available too.
+
+By default, the `git push` command doesn’t transfer tags to remote servers. You will have to explicitly push tags to a shared server after you have created them. This process is just like sharing remote branches — you can run `git push origin <tagname>` or  `git push origin --tags`. Note that pushing tags using `git push <remote> --tags` does not distinguish between lightweight and annotated tags. 
+
+There are two common variations for deleting a tag from a remote server. The first variation is `git push <remote> :refs/tags/<tagname>`. The way to interpret the above is to read it as the null value before the colon is being pushed to the remote tag name, effectively deleting it. The second (and more intuitive) way to delete a remote tag is with: `git push origin --delete <tagname>`.
+
+The `git tag` lists the existing tags.
+| `git tag` | Options (e.g.) | Description |
+| :-----| :----: | :---- |
+| `-l <pattern>` or `--list <pattern>` |  | Lists tags that match a particular pattern|
+| `-a <tag> <commit>`| `git tag -a v1.0 -m "V1.0"`| Creats an annotated tag|
+| `<tag> <commit>`| `git tag v1.0` | Creats a lightweight tag, which do not support `-a`, `-m` or `-s` options|
+| `-d <tag>`| `git tag -d v1.0` | Deletes a tag in local repositories|
+| `remove <remote>` or  `rm <remote>`| `git remote remove origin  ` | Removes a remote|
+
+If you want to view the versions of files a tag is pointing to, you can do a `git checkout` of that tag, although this puts your repository in “detached HEAD” state, which has some ill side effects. In “detached HEAD” state, if you make changes and then create a commit, the tag will stay the same, but your new commit won’t belong to any branch and will be unreachable, except by the exact commit hash. Thus, if you need to make changes — say you’re fixing a bug on an older version, for instance — you will generally want to create a branch: `git checkout -b version2 v2.0.0` and switch to a new branch 'version2'.  If you do this and make a commit, your version2 branch will be slightly different than your v2.0.0 tag since it will move forward with your new changes, so do be careful.
 
 ## Reference
 - [Git --everything-is-local](https://git-scm.com/)
