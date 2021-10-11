@@ -44,7 +44,7 @@ Note:
 class Solution {
     // there is gcd method available in <numeric> starting 
     // c++17 standard or not official __gcd function
-	// but we want to have our own implementation
+    // but we want to have our own implementation
     int gcd(int a, int b) {
         return b ? gcd(b, a % b) : a;
     }

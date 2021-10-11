@@ -53,7 +53,7 @@ public:
 
             if (hash.find(numberToFind) != hash.end()) {
                 result.push_back(hash[numberToFind]);
-                result.push_back(i);			
+                result.push_back(i);            
                 return result;
             }
             hash[nums[i]] = i;

@@ -68,7 +68,7 @@ public:
     unordered_set<int> cycle;   // will store all nodes of cycle
     int cycleStart = -1;        // used to mark start node of cycle
     vector<int> findRedundantConnection(vector<vector<int>>& e) {
-	    int n = size(e);
+        int n = size(e);
         vector<vector<int>> graph(n+1);
         vector<bool> vis(n+1);                
         // constructing the graph from the edges

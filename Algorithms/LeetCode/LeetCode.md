@@ -33,6 +33,10 @@ This is used to mark the most fundamental problems in Leetcode.
 - [462.](https://leetcode.com/problems/minimum-moves-to-equal-array-elements-ii/) [Minimum Moves to Equal Array Elements II](minimum-moves-to-equal-array-elements-ii.md)
 - [628.](https://leetcode.com/problems/maximum-product-of-three-numbers/) [Maximum Product of Three Numbers](maximum-product-of-three-numbers.md)
 
+## Bitwise
+### AND
+- [201.](https://leetcode.com/problems/bitwise-and-of-numbers-range/) [Bitwise AND of Numbers Range](bitwise-and-of-numbers-range.md)
+
 ## Search
 ### Binary Search
 - [34.](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/) [Find First and Last Position of Element in Sorted Array](find-first-and-last-position-of-element-in-sorted-array.md)
@@ -83,6 +87,7 @@ This is used to mark the most fundamental problems in Leetcode.
 ## Tree
 ### Tree Traversal
 - [102.](https://leetcode.com/problems/binary-tree-level-order-traversal) [Binary Tree Level Order Traversal](binary-tree-level-order-traversal.md)
+- [543.](https://leetcode.com/problems/diameter-of-binary-tree/) [Diameter of Binary Tree](diameter-of-binary-tree.md)
 ### Tree Implement
 - [208.](https://leetcode.com/problems/implement-trie-prefix-tree/) [Implement Trie (Prefix Tree)](implement-trie-prefix-tree.md)
 
@@ -93,6 +98,18 @@ This is used to mark the most fundamental problems in Leetcode.
 - [518.](https://leetcode.com/problems/coin-change-2) [Coin Charge 2](coin-change-2.md)
 - [1262.](https://leetcode.com/problems/greatest-sum-divisible-by-three/) [Greatest Sum Divisible by Three](greatest-sum-divisible-by-three.md)
 
+## Greedy
+- [53.](https://leetcode.com/problems/maximum-subarray/) [Maximum Subarray](maximum-subarray.md): Marked
+- [121.](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) [Best Time to Buy and Sell Stock](best-time-to-buy-and-sell-stock.md)
+- [122.](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/) [Best Time to Buy and Sell Stock II](best-time-to-buy-and-sell-stock-ii.md)
+- [392.](https://leetcode.com/problems/is-subsequence/) [Is Subsequence](is-subsequence.md)
+- [406.](https://leetcode.com/problems/queue-reconstruction-by-height/) [Queue Reconstruction by Height](queue-reconstruction-by-height.md) : Marked for further operation (the bitset search method)
+- [435.](https://leetcode.com/problems/non-overlapping-intervals/) [Non-overlapping Intervals](non-overlapping-intervals.md)
+- [455.](https://leetcode.com/problems/assign-cookies/) [Assign Cookies](assign-cookies.md)
+- [452.](https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons/) [Minimum Number of Arrows to Burst Balloons](minimum-number-of-arrows-to-burst-balloons.md)
+- [605.](https://leetcode.com/problems/can-place-flowers/) [Can Place Flowers](can-place-flowers.md)
+- [665.](https://leetcode.com/problems/non-decreasing-array/) [Non-decreasing Array](non-decreasing-array.md)
+- [763.](https://leetcode.com/problems/partition-labels/) [Partition Labels](partition-labels.md)
 ## Divide and Conquer
 - [95.](https://leetcode.com/problems/unique-binary-search-trees-ii/) [Unique Binary Search Trees II](unique-binary-search-trees-ii.md)
 - [241.](https://leetcode.com/problems/different-ways-to-add-parentheses/) [Different Ways to Add Parentheses](different-ways-to-add-parentheses.md)
