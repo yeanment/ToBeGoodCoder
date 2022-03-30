@@ -1,11 +1,13 @@
-# Notes for Editor Vim
+# Editors: Vim
 ## Introduction
 As programmers, we spend most of our time editing code, so it’s worth investing time mastering an editor that fits your needs. Here’s how you learn a new editor:
 - Start with a tutorial (i.e. this lecture, plus resources that we point out)
 - Stick with using the editor for all your text editing needs (even if it slows you down initially)
 - Look things up as you go: if it seems like there should be a better way to do something, there probably is
 
-Vim has a rich history; it originated from the Vi editor (1976), and it’s still being developed today. When programming, you spend most of your time reading/editing, not writing. For this reason, Vim is a modal editor: it has different modes for inserting text vs manipulating text. Vim is programmable (with Vimscript and also other languages like Python), and Vim’s interface itself is a programming language: **keystrokes** (with mnemonic names) are commands, and these commands are composable. Vim avoids the use of the mouse, because it’s too slow; Vim even avoids using the arrow keys because it requires too much movement.
+Additionally, no matter what shell you use, you can `export EDITOR=vim` to determine the default editor.
+
+Vim originated from the Vi editor (1976), and it’s still being developed today. Vim is a modal editor: it has different modes for inserting text vs manipulating text. Vim is programmable (with Vimscript and also other languages like Python), and Vim’s interface itself is a programming language: **keystrokes** (with mnemonic names) are commands, and these commands are composable. Vim avoids the use of the mouse, because it’s too slow; Vim even avoids using the arrow keys because it requires too much movement.
 
 Vim’s design is based on the idea that a lot of programmer time is spent reading, navigating, and making small edits, as opposed to writing long streams of text. For this reason, Vim has multiple operating modes.
 - Normal: for moving around a file and making edits
@@ -34,7 +36,10 @@ Movements in Vim are also called “nouns”, because they refer to chunks of te
 - Find: `f{character}`, `t{character}`, `F{character}`, `T{character}`
     + find/to forward/backward {character} on the current line
     + `,` `/` ; for navigating matches
-- Search: `/{regex}`, n / N for navigating matches
+- Search: `/{regex}`, `n` / `N` for navigating forward / backward matches
+- Search: `?{regex}`, search in backward direction `n` / `N` for navigating forward / backward matches
+- Move back / forward: `Ctrl-O` or `CTRL-I`
+- Matching of  (,), [,], { or }: `%`
 
 ### Selection
 Enter in visual modes and use movement for selection
@@ -44,20 +49,35 @@ Enter in visual modes and use movement for selection
 
 ### Edition
 Vim’s editing commands are also called “verbs”, because verbs act on nouns.
-- `i` enter Insert mode
+- `i` enter Insert mode before current char
+- `I` enter Insert at the begining of the current line
 - `o` / `O` insert line below / above
+- `a` / `A` append at the end of current char / line
+- `r` / `R` replace the character / characters at cursor with {} 
 - `d{motion}` delete {motion}
     + e.g. `dw` is delete word, `d$` is delete to end of line, `d0` is delete to beginning of line
 - `c{motion}` change {motion}
     + e.g. `cw` is change word like `d{motion}` followed by `i`
+    + e.g. `ce` is change until the end of the word like `d{motion}` followed by `i`
 - `x` delete character (equal do `dl`)
 - `s` substitute character (equal to `xi`)
 - Visual mode + manipulation
     + select text, `d` to delete it or `c` to change it
 - `u` to undo, `<C-r>` to redo
+- `U` to fix the whole line to origional state
 - `y` to copy / “yank” (some other commands like d also copy)
-- `p` to paste
-    
+- `p` to paste previously deleted text after the cursor
+
+### File & buffer status
+- `<C-g>` show your location in the file and the file status
+- `G` move to the bottom of the file
+- `gg` move to the start of the file
+- `{}G` move you to the line {}
+- `:r {file}` read {file}
+- `:e {file}` edit {file}
+- `:w {file}` write {file}
+- `:e !{command}` read output of the external command
+
 ### Counts
 You can combine nouns and verbs with a count, which will perform a given action a number of times, e.g. `3w` move 3 words forward, `5j` move 5 lines down, `7dw` delete 7 words.
 
@@ -74,16 +94,23 @@ Command mode can be entered by typing `:` in Normal mode. This mode has many fun
 - `:wq` save and quit
 - `:e {name of file}` open file for editing
 - `:ls` show open buffers
+- `:! ` execute external commands
 - `:help {topic}` open help
     + `:help :w` opens help for the `:w` command
     + `:help w` opens help for the `w` movement
+- `:set xxx` sets the option "xxx".  Some options are:
+    + `ic` `ignorecase` ignore upper/lower case when searching
+    + `is` `incsearch` show partial matches for a search phrase
+    + `hls` `hlsearch` highlight all matching phrases
+    + `noic` prepend "no" to switch an option off
+    + `nocp` not in compatible mode 
 
-## Advanced Vim
 ### Search and replace
 - `:s` (substitute) command (documentation).
     + `%s/foo/bar/g` replace foo with bar globally in file
     + `%s/\[.*\](\(.*\))/\1/g` replace named Markdown links with plain URLs
-
+    + `#,#s/old/new/g` subsitute between line # to line #
+    
 ### Multiple windows
 - `:sp` / `:vsp` to split windows 
 
@@ -100,17 +127,21 @@ Command mode can be entered by typing `:` in Normal mode. This mode has many fun
 ## Customizing Vim
 Vim is customized through a plain-text configuration file in `~/.vimrc` (containing Vimscript commands). There are probably lots of basic settings that you want to turn on. A well-documented basic config is shown here [`.vimrc`](Tools/.vimrc). Vim is heavily customizable, and it’s worth spending time exploring customization options. You can look at people’s dotfiles on GitHub for inspiration. There are lots of good blog posts on this topic too. 
 
-There are tons of plugins for extending Vim. Contrary to outdated advice that you might find on the internet, you do not need to use a plugin manager for Vim (since Vim 8.0). Instead, you can use the built-in package management system. Simply create the directory `~/.vim/pack/vendor/start/`, and put plugins in there (e.g. via git clone).
+There are tons of plugins for extending Vim. You do not need to use a plugin manager for Vim (since Vim 8.0), instead you can use the built-in package management system. Simply create the directory `~/.vim/pack/vendor/start/`, and put plugins in there (e.g. via git clone).
 
 Here are some of our favorite plugins:
-- 'ctrlp.vim': fuzzy file finder
-- `ack.vim`: code search
-- `nerdtree`: file explorer
-- `vim-easymotion`: magic motions
+- [ctrlp.vim](https://github.com/ctrlpvim/ctrlp.vim): fuzzy file finder
+- [ack.vim](https://github.com/mileszs/ack.vim): code search
+- [nerdtree](https://github.com/scrooloose/nerdtree): file explorer
+- [vim-easymotion](https://github.com/easymotion/vim-easymotion): magic motions
 
+You can also check out the instructors' dotfiles
+- [Anish](https://github.com/anishathalye/dotfiles)
+- [Jon](https://github.com/jonhoo/configs)
+- [Jose](https://github.com/JJGO/dotfiles)
 
 ## Resources
-- vimtutor is a tutorial that comes installed with Vim - if Vim is installed, you should be able to run vimtutor from your shell
+- `vimtutor` is a tutorial that comes installed with Vim
 - [Vim Adventures](https://vim-adventures.com/) is a game to learn Vim
 - [Vim Tips Wiki](http://vim.wikia.com/wiki/Vim_Tips_Wiki)
 - [Vim Advent Calendar](https://vimways.org/2019/) has various Vim tips

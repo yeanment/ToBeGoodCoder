@@ -1,21 +1,16 @@
 # Regrex Expression
-<!-- GFM-TOC -->
-* [Regrex Expression](#Regrex Expression)
-    * [1. Basic grammar](#1. Basic grammar)
-    * [二、匹配单个字符](#二匹配单个字符)
-    * [三、匹配一组字符](#三匹配一组字符)
-    * [四、使用元字符](#四使用元字符)
-    * [五、重复匹配](#五重复匹配)
-    * [六、位置匹配](#六位置匹配)
-    * [七、使用子表达式](#七使用子表达式)
-    * [八、回溯引用](#八回溯引用)
-    * [九、前后查找](#九前后查找)
-    * [十、嵌入条件](#十嵌入条件)
-    * [参考资料](#参考资料)
-<!-- GFM-TOC -->
-
 
 ## 1. Basic grammar
+ - `.` means "any single character" except newline
+ - `*` zero or more of the preceding match
+ - `?` zero or one of the preceding match
+ - `+` one or more of the preceding match
+ - `[abc]` any one character of `a`, `b`, and `c`
+ - `(RX1|RX2)` either something that matches `RX1` or `RX2`
+ - `^` the start of the line
+ - `$` the end of the line
+
+Note that `*` and `+` are, by default, greedy. They will match as much text as they can. In some regular expression implementations, suffix `*` or `+` with a `?` to make them non-greedy.
 |  | Description  |
 | :---: | :---: |
 |  [\b] | 回退（删除）一个字符   |
@@ -42,12 +37,9 @@
 | :---: | :---: |
 |  \x | 十六进制，\xA对应值为10的ASCII字符  |
 | \0  | 八进制 |
-| :---: | :---: |
-|  + | 匹配 1 个或者多个字符 |
-| *  | 匹配 0 个或者多个字符 |
-| ?  | 匹配 0 个或者 1个字符 |
 
-\* 和 + 都是贪婪型元字符，会匹配尽可能多的内容。在后面加 ? 可以转换为懒惰型元字符，例如 \*?、+? 和 {m,n}? 。
+
+在后面加 ? 可以转换为懒惰型元字符，例如 \*?、+? 和 {m,n}? 。
 
 
 
