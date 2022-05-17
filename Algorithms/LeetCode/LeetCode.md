@@ -43,6 +43,7 @@ This is used to mark the most fundamental problems in Leetcode.
 - [69.](https://leetcode.com/problems/sqrtx/) [Sqrt(x)](sqrtx.md)
 - [153.](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/) [Find Minimum in Rotated Sorted Array](find-minimum-in-rotated-sorted-array.md) 
 - [278.](https://leetcode.com/problems/first-bad-version/) [First Bad Version](first-bad-version.md)
+- [374.](https://leetcode.com/problems/guess-number-higher-or-lower/) [Guess Number Higher or Lower](guess-number-higher-or-lower.md)
 - [540.](https://leetcode.com/problems/single-element-in-a-sorted-array/) [Single Element in a Sorted Array](single-element-in-a-sorted-array,md)
 
 ### Maze
@@ -50,7 +51,11 @@ This is used to mark the most fundamental problems in Leetcode.
 - [212.](https://leetcode.com/problems/word-search-ii/) [Word Search II](word-search-ii.md)
 
 ## Sorting
-### Merge Sorting
+### Heap Sort
+- [215.](https://leetcode.com/problems/kth-largest-element-in-an-array/) [Kth Largest Element in an Array](kth-largest-element-in-an-array.md): To be further implemented
+### Bucket Sort
+- [347.](https://leetcode.com/problems/top-k-frequent-elements/) [Top K Frequent Elements](top-k-frequent-elements.md)
+### Merge Sort
 - [88.](https://leetcode.com/problems/merge-sorted-array/) [Merge Sorted Array](merge-sorted-array.md)
 - [744.](https://leetcode.com/problems/find-smallest-letter-greater-than-target/) [Find Smallest Letter Greater Than Target](find-smallest-letter-greater-than-target.md)
 
@@ -88,11 +93,13 @@ This is used to mark the most fundamental problems in Leetcode.
 ### Tree Traversal
 - [102.](https://leetcode.com/problems/binary-tree-level-order-traversal) [Binary Tree Level Order Traversal](binary-tree-level-order-traversal.md)
 - [543.](https://leetcode.com/problems/diameter-of-binary-tree/) [Diameter of Binary Tree](diameter-of-binary-tree.md)
+- [1008.](https://leetcode.com/problems/construct-binary-search-tree-from-preorder-traversal/) [Construct Binary Search Tree from Preorder Traversal](construct-binary-search-tree-from-preorder-traversal.md)
 ### Tree Implement
 - [208.](https://leetcode.com/problems/implement-trie-prefix-tree/) [Implement Trie (Prefix Tree)](implement-trie-prefix-tree.md)
 
 ## Dynamic Programming
 ### Knapsack Problems
+- [279.](https://leetcode.com/problems/perfect-squares/) [Perfect Squares](perfect-squares.md)
 - [416.](https://leetcode.com/problems/partition-equal-subset-sum) [Partition Equal Subset Sum](partition-equal-subset-sum.md)
 - [698.](https://leetcode.com/problems/partition-to-k-equal-sum-subsets) [Partition to k Equal Sum Subsets](partition-to-k-equal-sum-subsets.md)
 - [518.](https://leetcode.com/problems/coin-change-2) [Coin Charge 2](coin-change-2.md)

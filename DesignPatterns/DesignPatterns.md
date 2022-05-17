@@ -10,10 +10,11 @@ By definition, Design Patterns are reusable solutions to commonly occuring probl
 - [Factory Method:](factory-method-pattern.md) Defines an interface for creating objects, but let subclasses to decide which class to instantiate and refers to the newly created object through a common interface.
 - [Abstract Factory:](abstract-factory-pattern.md) Offers the interface for creating a family of related objects, without explicitly specifying their classes. 
 - [Builder:](builder-pattern.md) Defines an instance for creating an object but letting subclasses decide which class to instantiate and Allows a finer control over the construction process. 
-- [Prototype:](prototype-pattern.md) Specify the kinds of objects to create using a prototypical instance, and create new objects by copying this prototype.
+- [Prototype:](prototype-pattern.md) Specifies the kinds of objects to create using a prototypical instance, and create new objects by copying this prototype.
 - [Object Pool:](object-pool-pattern.md) Reuses and shares objects that are expensive to create. 
 
 ## Behavioral Design Patterns:
+- [Chain of Responsibiliy:](chain-of-responsibility-pattern.md) Avoids attaching the sender of a request to its receiver, giving this way other objects the possibility of handling the request too.
 <!-- 
 - [责任链.md](设计模式%20-%20责任链.md)
 - [命令.md](设计模式%20-%20命令.md)
