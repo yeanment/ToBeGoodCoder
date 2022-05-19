@@ -32,6 +32,8 @@ But only the current level of search knows it finds a cycle. How does the upper 
 
 After doing dfs on all nodes, all edges in cycles are discarded. So the remaining edges are critical connections.
 
+Check [](https://www.youtube.com/watch?v=wUgWX0nc4NY) for more details on Tarjan algorithm.
+
 ```C++
 class Solution {
 public:
@@ -89,3 +91,4 @@ public:
 Note:
 - Runtime: 681 ms
 - Memory Usage: 174.8 MB
+

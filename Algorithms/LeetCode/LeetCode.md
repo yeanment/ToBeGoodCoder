@@ -49,6 +49,7 @@ This is used to mark the most fundamental problems in Leetcode.
 ### Maze
 - [79.](https://leetcode.com/problems/word-search/) [Word Search](word-search.md)
 - [212.](https://leetcode.com/problems/word-search-ii/) [Word Search II](word-search-ii.md)
+- [329.](https://leetcode.com/problems/longest-increasing-path-in-a-matrix/) [Longest Increasing Path in a Matrix](longest-increasing-path-in-a-matrix.md)
 
 ## Sorting
 ### Heap Sort
@@ -81,6 +82,9 @@ This is used to mark the most fundamental problems in Leetcode.
 ## Graph
 ### Bipartite Graph 
 - [785.](https://leetcode.com/problems/is-graph-bipartite/) [Is Graph Bipartite?](is-graph-bipartite.md)
+
+### Biconnected Component 
+- [1192.](https://leetcode.com/problems/critical-connections-in-a-network/) [Critical Connections in a Network](critical-connections-in-a-network.md)
 
 ### Topological Sort
 - [207.](https://leetcode.com/problems/course-schedule/) [Course Schedule](course-schedule.md)
