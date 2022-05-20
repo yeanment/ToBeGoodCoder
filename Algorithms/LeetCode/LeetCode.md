@@ -47,15 +47,27 @@ This is used to mark the most fundamental problems in Leetcode.
 - [540.](https://leetcode.com/problems/single-element-in-a-sorted-array/) [Single Element in a Sorted Array](single-element-in-a-sorted-array,md)
 
 ### Maze
+- [63.](https://leetcode.com/problems/unique-paths-ii/) [Unique Paths II](unique-paths-ii.md)
 - [79.](https://leetcode.com/problems/word-search/) [Word Search](word-search.md)
 - [212.](https://leetcode.com/problems/word-search-ii/) [Word Search II](word-search-ii.md)
 - [329.](https://leetcode.com/problems/longest-increasing-path-in-a-matrix/) [Longest Increasing Path in a Matrix](longest-increasing-path-in-a-matrix.md)
+- [1091.](https://leetcode.com/problems/shortest-path-in-binary-matrix/) [Shortest Path in Binary Matrix](shortest-path-in-binary-matrix.md)
+
+
+### BFS
+- [127.](https://leetcode.com/problems/word-ladder/) [Word Ladder](word-ladder.md)
+
+
+### DFS
+
 
 ## Sorting
 ### Heap Sort
 - [215.](https://leetcode.com/problems/kth-largest-element-in-an-array/) [Kth Largest Element in an Array](kth-largest-element-in-an-array.md): To be further implemented
 ### Bucket Sort
 - [347.](https://leetcode.com/problems/top-k-frequent-elements/) [Top K Frequent Elements](top-k-frequent-elements.md)
+- [451.](https://leetcode.com/problems/sort-characters-by-frequency/) [Sort Characters By Frequency](sort-characters-by-frequency.md)
+
 ### Merge Sort
 - [88.](https://leetcode.com/problems/merge-sorted-array/) [Merge Sorted Array](merge-sorted-array.md)
 - [744.](https://leetcode.com/problems/find-smallest-letter-greater-than-target/) [Find Smallest Letter Greater Than Target](find-smallest-letter-greater-than-target.md)
@@ -69,6 +81,8 @@ This is used to mark the most fundamental problems in Leetcode.
 - [680.](https://leetcode.com/problems/valid-palindrome-ii/) [Valid Palindrome II](valid-palindrome-ii.md)
 - [524.](https://leetcode.com/problems/longest-word-in-dictionary-through-deleting/) [Longest Word in Dictionary through Deleting](longest-word-in-dictionary-through-deleting.md)
 - [141.](https://leetcode.com/problems/linked-list-cycle/) [Linked List Cycle](linked-list-cycle.md)
+- [75.](https://leetcode.com/problems/sort-colors/) [Sort Colors](sort-colors.md)
+
 
 ## Array
 ### Hash Table
