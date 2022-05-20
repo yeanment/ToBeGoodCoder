@@ -54,11 +54,14 @@ This is used to mark the most fundamental problems in Leetcode.
 - [1091.](https://leetcode.com/problems/shortest-path-in-binary-matrix/) [Shortest Path in Binary Matrix](shortest-path-in-binary-matrix.md)
 
 
-### BFS
+### BFS & DFS
 - [127.](https://leetcode.com/problems/word-ladder/) [Word Ladder](word-ladder.md)
+- [130.](https://leetcode.com/problems/surrounded-regions/) [Surrounded Regions](surrounded-regions.md)
+- [417.](https://leetcode.com/problems/pacific-atlantic-water-flow/) [Pacific Atlantic Water Flow](pacific-atlantic-water-flow.md)
+- [200.](https://leetcode.com/problems/number-of-islands/) [Number of Islands](number-of-islands.md)
+- [695.](https://leetcode.com/problems/max-area-of-island/) [Max Area of Island](max-area-of-island.md)
+- [547.](https://leetcode.com/problems/number-of-provinces/) [Number of Provinces](number-of-provinces.md)
 
-
-### DFS
 
 
 ## Sorting
