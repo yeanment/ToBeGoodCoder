@@ -62,6 +62,20 @@ This is used to mark the most fundamental problems in Leetcode.
 - [695.](https://leetcode.com/problems/max-area-of-island/) [Max Area of Island](max-area-of-island.md)
 - [547.](https://leetcode.com/problems/number-of-provinces/) [Number of Provinces](number-of-provinces.md)
 
+### Backtracking
+- [17.](https://leetcode.com/problems/letter-combinations-of-a-phone-number/) [Letter Combinations of a Phone Number](letter-combinations-of-a-phone-number.md)
+- [37.](https://leetcode.com/problems/sudoku-solver/) [Sudoku Solver](sudoku-solver.md)
+- [51.](https://leetcode.com/problems/n-queens/) [N-Queens](n-queens.md)
+- [46.](https://leetcode.com/problems/permutations/) [Permutations](permutations.md)
+- [47.](https://leetcode.com/problems/permutations-ii/) [Permutations II](permutations-ii.md)
+- [77.](https://leetcode.com/problems/combinations/) [Combinations](combinations.md)
+- [78.](https://leetcode.com/problems/subsets/) [Subsets](subsets.md)
+- [90.](https://leetcode.com/problems/subsets-ii/) [Subsets II](subsets-ii.md)
+- [39.](https://leetcode.com/problems/combination-sum/) [Combination Sum](combination-sum.md)
+- [40.](https://leetcode.com/problems/combination-sum-ii/) [Combination Sum II](combination-sum-ii.md)
+- [216.](https://leetcode.com/problems/combination-sum-iii/) [Combination Sum III](combination-sum-iii.md)
+- [93.](https://leetcode.com/problems/restore-ip-addresses/) [Restore IP Addresses](restore-ip-addresse.md)
+- [131.](https://leetcode.com/problems/palindrome-partitioning/) [Palindrome Partitioning](palindrome-partitioning.md)
 
 
 ## Sorting
@@ -112,7 +126,8 @@ This is used to mark the most fundamental problems in Leetcode.
 
 ## Tree
 ### Tree Traversal
-- [102.](https://leetcode.com/problems/binary-tree-level-order-traversal) [Binary Tree Level Order Traversal](binary-tree-level-order-traversal.md)
+- [257.](https://leetcode.com/problems/binary-tree-paths/) [Binary Tree Paths](binary-tree-paths.md)
+- [102.](https://leetcode.com/problems/binary-tree-level-order-traversal/) [Binary Tree Level Order Traversal](binary-tree-level-order-traversal.md)
 - [543.](https://leetcode.com/problems/diameter-of-binary-tree/) [Diameter of Binary Tree](diameter-of-binary-tree.md)
 - [1008.](https://leetcode.com/problems/construct-binary-search-tree-from-preorder-traversal/) [Construct Binary Search Tree from Preorder Traversal](construct-binary-search-tree-from-preorder-traversal.md)
 - [1379.](https://leetcode.com/problems/find-a-corresponding-node-of-a-binary-tree-in-a-clone-of-that-tree/) [Find a Corresponding Node of a Binary Tree in a Clone of That Tree](find-a-corresponding-node-of-a-binary-tree-in-a-clone-of-that-tree.md)
@@ -124,15 +139,20 @@ This is used to mark the most fundamental problems in Leetcode.
 ### Knapsack Problems
 - [279.](https://leetcode.com/problems/perfect-squares/) [Perfect Squares](perfect-squares.md)
 - [416.](https://leetcode.com/problems/partition-equal-subset-sum) [Partition Equal Subset Sum](partition-equal-subset-sum.md)
+- [474.](https://leetcode.com/problems/ones-and-zeroes/) [Ones and Zeros](ones-and-zeroes.md)
 - [698.](https://leetcode.com/problems/partition-to-k-equal-sum-subsets) [Partition to k Equal Sum Subsets](partition-to-k-equal-sum-subsets.md)
 - [518.](https://leetcode.com/problems/coin-change-2) [Coin Charge 2](coin-change-2.md)
+- [647.](https://leetcode.com/problems/palindromic-substrings/) [Palindromic Substrings](palindromic-substrings.md)
 - [1262.](https://leetcode.com/problems/greatest-sum-divisible-by-three/) [Greatest Sum Divisible by Three](greatest-sum-divisible-by-three.md)
 
+
 ## Greedy
+- [32.](https://leetcode.com/problems/longest-valid-parentheses/) [Maximum Subarray](longest-valid-parentheses.md)
 - [53.](https://leetcode.com/problems/maximum-subarray/) [Maximum Subarray](maximum-subarray.md): Marked
 - [121.](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) [Best Time to Buy and Sell Stock](best-time-to-buy-and-sell-stock.md)
 - [122.](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/) [Best Time to Buy and Sell Stock II](best-time-to-buy-and-sell-stock-ii.md)
 - [123.](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/) [Best Time to Buy and Sell Stock III](best-time-to-buy-and-sell-stock-iii.md)
+- [354.](https://leetcode.com/problems/russian-doll-envelopes/) [Russian Doll Envelopes](russian-doll-envelopes.md): Longest increasing sequences.
 - [392.](https://leetcode.com/problems/is-subsequence/) [Is Subsequence](is-subsequence.md)
 - [406.](https://leetcode.com/problems/queue-reconstruction-by-height/) [Queue Reconstruction by Height](queue-reconstruction-by-height.md) : Marked for further operation (the bitset search method)
 - [435.](https://leetcode.com/problems/non-overlapping-intervals/) [Non-overlapping Intervals](non-overlapping-intervals.md)
@@ -141,6 +161,7 @@ This is used to mark the most fundamental problems in Leetcode.
 - [605.](https://leetcode.com/problems/can-place-flowers/) [Can Place Flowers](can-place-flowers.md)
 - [665.](https://leetcode.com/problems/non-decreasing-array/) [Non-decreasing Array](non-decreasing-array.md)
 - [763.](https://leetcode.com/problems/partition-labels/) [Partition Labels](partition-labels.md)
+
 ## Divide and Conquer
 - [95.](https://leetcode.com/problems/unique-binary-search-trees-ii/) [Unique Binary Search Trees II](unique-binary-search-trees-ii.md)
 - [241.](https://leetcode.com/problems/different-ways-to-add-parentheses/) [Different Ways to Add Parentheses](different-ways-to-add-parentheses.md)
